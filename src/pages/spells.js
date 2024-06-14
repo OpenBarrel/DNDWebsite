@@ -24,8 +24,8 @@ export default function Spells(props) {
             {tabs.map( (level) => (<li><a href={'#spells/' + level} >Level {level}</a></li>) )}
         </ul>
         <ul>
-          {spells.filter((spell) => (spell.level === spellLevel)).map((spell) => ( 
-          <li key={spell.index}> {spell.name} - {spell.level} - {spell.school.name}</li> 
+          {spells.filter((spell) => ((spell.level === spellLevel) && (spell.classes.some(name => name.index === 'wizard')))).map((spell) => ( 
+          <li key={spell.index}> {spell.name} - {spell.level === 0 ? 'Cantrip' : spell.level} - {spell.school.name}</li> 
         ))} 
         </ul>
       </div>
