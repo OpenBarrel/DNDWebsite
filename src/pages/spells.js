@@ -24,9 +24,9 @@ export default function Spells(props) {
             {tabs.map( (level) => (<li><a href={'#spells/' + level} >Level {level}</a></li>) )}
         </ul>
         <ul>
-          {spells.map((spell) => ( spell.level === spellLevel ?
+          {spells.filter((spell) => (spell.level === spellLevel)).map((spell) => ( 
           <li key={spell.index}> {spell.name} - {spell.level} - {spell.school.name}</li> 
-        : null))} 
+        ))} 
         </ul>
       </div>
     ); 

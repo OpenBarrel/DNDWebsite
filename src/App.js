@@ -17,15 +17,8 @@ function App() {
           <Route path='/' element={<Home level={1}/>}/>
           <Route path='/test' element={<Testpage/>}/>
           <Route path='/spells' element={<Spells level={1}/>}/>
-          <Route path='/spells/1' element={<Spells level={1}/>}/>
-          <Route path='/spells/2' element={<Spells level={2}/>}/>
-          <Route path='/spells/3' element={<Spells level={3}/>}/>
-          <Route path='/spells/4' element={<Spells level={4}/>}/>
-          <Route path='/spells/5' element={<Spells level={5}/>}/>
-          <Route path='/spells/6' element={<Spells level={6}/>}/>
-          <Route path='/spells/7' element={<Spells level={7}/>}/>
-          <Route path='/spells/8' element={<Spells level={8}/>}/>
-          <Route path='/spells/9' element={<Spells level={9}/>}/>
+          // creates routes for all spell pages using .map()
+          {tabs.map( (level) => (<Route path={'/spells/'+level} element={<Spells level={level}/>}/>))}
         </Route>
       </Routes>
     </Router>
