@@ -6,7 +6,7 @@ export default function Spells(props) {
     const [spells, setSpells] = useState([]);
     const spellLevel = props.level;
     const tabs = [0,1,2,3,4,5,6,7,8,9];
-    let classFiltering = false;
+    let classFiltering = props.checkClass;
 
     // used to save once loaded to reduce load times
     useEffect( () => {
@@ -19,6 +19,7 @@ export default function Spells(props) {
     
     }, []);
     
+    // maps each spell for display, filters by spell level and optionally filters by class
     return (
       <div>
         <ul className='nav nav-tabs'>
