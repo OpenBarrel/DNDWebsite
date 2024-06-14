@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Spells(props) {
     const [spells, setSpells] = useState([]);
     const spellLevel = props.level;
-    const tabs = [1,2,3,4,5,6,7,8,9];
+    const tabs = [0,1,2,3,4,5,6,7,8,9];
 
     // used to save once loaded to reduce load times
     useEffect( () => {
