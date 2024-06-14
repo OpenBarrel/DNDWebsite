@@ -10,6 +10,7 @@ function MyNavbar() {
           <Navbar.Collapse id='basic-navbar-new'>
             <Nav.Link id='link1' href='/'>Home</Nav.Link>
             <Nav.Link id='link1' href='#test'>Test</Nav.Link>
+            <Nav.Link id='link1' href='#spells'>Spells</Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
