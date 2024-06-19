@@ -1,5 +1,4 @@
 import style from './style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/home';
 import Testpage from './pages/testpage';
 import Spells from './pages/spells';
@@ -18,7 +17,7 @@ function App() {
           <Route path='/test' element={<Testpage/>}/>
           <Route path='/spells' element={<Spells level={1}/>}/>
           // creates routes for all spell pages using .map()
-          {tabs.map( (level) => (<Route path={'/spells/'+level} element={<Spells level={level} checkClass={false}/>}/>))}
+          {tabs.map( (level) => (<Route path={'/spells/'+level} element={<Spells level={level}/>}/>))}
         </Route>
       </Routes>
     </Router>
