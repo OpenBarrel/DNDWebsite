@@ -29,11 +29,11 @@ export default function Spells(props) {
     return (
       <div>
         <ul className='nav nav-tabs'>
-            {tabs.map( (level) => (<li><a href={'#spells/' + level} >Level {level}</a></li>) )}
+            {tabs.map( (level) => ( level === 0 ? <li><a href={'#spells/' + level} > Cantrips</a></li> : <li><a href={'#spells/' + level} > Level {level}</a></li>) )}
             <button class="btn btn-secondary" onClick={() => (setUseClass(!useClass))}>Use Classes: {useClass.toString().charAt(0).toUpperCase() + useClass.toString().slice(1)}</button>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Class: {selectedClass.charAt(0).toUpperCase() + selectedClass.slice(1)}
+                Select Class: {selectedClass.toString().charAt(0).toUpperCase() + selectedClass.slice(1)}
               </button>
               <div class="dropdown-menu" aria-labelledby='dropdownMenuButton'>
                 {classes.map( (name) => (<button class="dropdown-item" type="button" onClick={() => setClass(name)}>{name.charAt(0).toUpperCase() + name.slice(1)}</button>))}
