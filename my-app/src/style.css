@@ -12,12 +12,20 @@
 li {
     padding: 5px
 }
-.col {
-    background-image: linear-gradient(red,yellow);
-    border: 1px solid black;
-    padding: 10px;
-}
 
 #navbar-container {
     font-weight: bold;
+}
+
+#spell {
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+#container {
+    padding: 0px;
+}
+#filterCol {
+    padding: 10px;
+    background-color: lightgray;
 }
