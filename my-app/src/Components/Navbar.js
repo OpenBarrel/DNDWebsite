@@ -11,6 +11,7 @@ function MyNavbar() {
             <a class='nav-link' id='link1' href='/'>Home</a>
             <a class='nav-link' id='link1' href='#test'>Test</a>
             <a class='nav-link' id='link1' href='#spells'>Spells</a>
+            <a class='nav-link' id='link1' href='#races'>Races</a>
           </div>
         </div>
       </nav>
