@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Testpage from './pages/testpage';
 import Spells from './pages/spells';
 import Races from './pages/races';
+import Classes from './pages/classes';
 import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import Layout from './Layout';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/test' element={<Testpage/>}/>
           <Route path='/spells' element={<Spells level={0}/>}/>
           <Route path='/races' element={<Races/>}/>
+          <Route path='/classes' element={<Classes/>}/>
           // creates routes for all spell pages using .map()
           {tabs.map( (level) => (<Route path={'/spells/'+level} element={<Spells level={level}/>}/>))}
         </Route>

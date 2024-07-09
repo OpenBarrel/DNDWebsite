@@ -21,7 +21,12 @@ export default function Races() {
         <div>
             <ul>
                 {races.map((race) => (
-                    <li key={race.index}> {race.name} </li>
+                    <li id='race' key={race.index}> 
+                    {race.name} 
+                      <li id='trait'>{race.alignment}</li>
+                      <li id='trait'>{race.size_description}</li>
+                      <li id='trait'>{race.language_desc}</li>       
+                    </li>
                 ))}
             </ul>
         </div>

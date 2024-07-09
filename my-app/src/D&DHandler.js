@@ -13,4 +13,11 @@ export async function getAllRaces(){
     return Promise.all (
        raceIndexes.results.map( (index) => fetch(BASE_URL + index.url).then((response) => response.json()))
     );
+};
+
+export async function getAllClasses(){
+    const raceIndexes = await fetch(BASE_URL + "/api/classes").then((response) => response.json());
+    return Promise.all (
+       raceIndexes.results.map( (index) => fetch(BASE_URL + index.url).then((response) => response.json()))
+    );
 }

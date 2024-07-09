@@ -29,3 +29,9 @@ li {
     padding: 10px;
     background-color: lightgray;
 }
+#race {
+    font-weight: bold;
+}
+#trait {
+    font-weight: 400;
+}
