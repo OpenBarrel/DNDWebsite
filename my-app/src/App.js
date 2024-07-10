@@ -1,6 +1,5 @@
 import style from './style.css'
 import Home from './pages/home';
-import Testpage from './pages/testpage';
 import Spells from './pages/spells';
 import Races from './pages/races';
 import Classes from './pages/classes';
@@ -16,7 +15,6 @@ function App() {
       <Routes>
         <Route element={<Layout/>}>
           <Route path='/' element={<Home/>}/>
-          <Route path='/test' element={<Testpage/>}/>
           <Route path='/spells' element={<Spells level={0}/>}/>
           <Route path='/races' element={<Races/>}/>
           <Route path='/classes' element={<Classes/>}/>

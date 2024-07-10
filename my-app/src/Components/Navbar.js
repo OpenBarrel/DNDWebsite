@@ -9,7 +9,6 @@ function MyNavbar() {
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class='collapse navbar-collapse'>
             <a class='nav-link' id='link1' href='/'>Home</a>
-            <a class='nav-link' id='link1' href='#test'>Test</a>
             <a class='nav-link' id='link1' href='#classes'>Classes</a>
             <a class='nav-link' id='link1' href='#races'>Races</a>
             <a class='nav-link' id='link1' href='#spells'>Spells</a>
