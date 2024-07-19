@@ -35,3 +35,15 @@ li {
 #trait {
     font-weight: 400;
 }
+.spellList {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+#spellCard {
+    background-color: violet;
+}
+#spellLevels {
+    color:black;
+}
